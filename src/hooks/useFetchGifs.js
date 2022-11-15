@@ -21,6 +21,6 @@ export const useFetchGifs = ( category ) => {
   return {
     //images: images,  --> Es igual a la siguiente línea
     images,
-    isLoading //Pudo ser isLoading: isLoading
+    isLoading //Pudo ser "isLoading: isLoading"
   }
 }

@@ -3,7 +3,7 @@ import { useFetchGifs } from '../hooks/useFetchGifs';
 
 export const GifGrid = ({category}) => {
 
-  const {images, isLoading} = useFetchGifs(category);
+  const {images, isLoading} = useFetchGifs(category); // Le mandamos la categoría al custom hook. Lo que devuelve lo desestructuramos {images, isLoading}
 
 
   return (
@@ -18,7 +18,7 @@ export const GifGrid = ({category}) => {
             images.map((image) => (
                 <GifItem
                   key={image.id}
-                  {...image}
+                  {...image} // Manda desestructurado lo que contiene "image" en la posición actual
                 />
             ))
           }          
